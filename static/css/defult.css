@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+i {
+    margin-right: 10px;
+}
+nav{
+    background-color: #5161ce; 
+    height: 85px !important;
+    
+}
+.navbar-nav li a{
+    margin-top: 55px;
+    padding: 3px;
+}
+@media(max-width: 992px) {
+    .navbar-nav li {
+        margin-top: -20px !important; 
+        position: relative;
+    
+    }
+    .collapse{
+        margin-top: -3px;
+    }
+    .collapse ul li a{
+        text-align: center;
+     }
+     
+}
+
+.collapse{
+    background-color: #5161ce;
+}
+.collapse ul li{
+   margin-left: 20px;
+}
+ul li a .active  {
+    background-color: rgb(252, 248, 248);
+    color: black !important;
+    border-radius: 8px 8px 0px 0px;
+    width: auto;
+}
+.carousel-item{
+    max-height: 450px;
+
+
+
