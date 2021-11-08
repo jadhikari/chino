@@ -9,3 +9,15 @@ def chino(request):
 
 def about(request):
     return render(request,'about.html')
+
+def calendar(request):
+    return render(request, 'calendar.html')
+
+def company(request):
+    return render(request,'company.html')
+
+def contact(request):
+    return render(request,'contact.html')
+
+def components(request):
+    return render(request,'components.html')

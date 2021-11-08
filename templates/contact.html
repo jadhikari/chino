@@ -1,0 +1,146 @@
+{%extends 'main.html'%}
+{% block title %}
+            Chino:about
+{% endblock %}
+
+{% block content %}
+<style>
+  
+#contatti a{
+  color: #5161ce;
+  text-decoration: none;
+}
+#contatti{
+    margin-top: 80px;
+}
+
+@media (max-width: 500px) {
+
+  #contatti{padding-bottom: 0px;}
+  #contatti .maps iframe{
+     width: 100%;
+    height: 300px;
+   
+  }
+ }
+
+
+@media (min-width: 576px) {
+
+   #contatti{padding-bottom: 0px;}
+
+   #contatti .maps iframe{
+     width: 100%;
+     height: 350px;
+   }
+ }
+
+@media (min-width: 768px) {
+
+  #contatti{padding-bottom: 0px;}
+
+  #contatti .maps iframe{
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  #contatti{padding-bottom: 0px;}
+
+   #contatti .maps iframe{
+     width: 100%;
+     height: 500px;
+   }
+}
+
+
+#author a{
+  color: #5161ce;
+  text-decoration: none;
+    
+}
+
+</style>
+<div class="row" id="contatti">
+    <div class="container mt-5" >
+    
+        <div class="row" >
+          
+          <div class="col-md-6">
+            <h2 class="text-uppercase mt-3 font-weight-bold text-primary">お問い合わせ</h2>
+            <form action="">
+              <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                     <p>
+                      弊社に興味をお持ちいただきありがとうございます。<br>
+                      お問い合わせいただきました内容は、弊社の掲げる個人情報保護方針に沿って管理し、お客様の同意なく第三者に開示・提供することはございません。<br>
+                      詳細につきましては、当サイトの「プライバシーポリシー」をご参照ください。
+                     </p>
+                    </div>
+                  </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control mt-2" placeholder="お名前（必須）" required>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control mt-2" placeholder="題名（必須）" required>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input type="email" class="form-control mt-2" placeholder="メールアドレス（必須）" required>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control mt-2" placeholder="電話番号（必須）" required>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="お問い合わせ内容（必須）" rows="3" required></textarea>
+                  </div>
+                </div>
+                <div class="col-12">
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="form-check-label" for="invalidCheck2">
+                      確認画面は表示されません。上記内容にて送信しますがよろしいですか？（必須）
+                    </label>
+                  </div>
+                </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+              </div>
+            </form>
+            <div class="text-primary">
+            <h2 class="text-uppercase mt-4 font-weight-bold">私たちがいる場所</h2>
+    
+            <i class="fas fa-phone mt-3"></i> <a href="tel:+">(+81) 0429 68 9974</a><br>
+            <i class="fas fa-phone mt-3"></i> <a href="tel:+">(+81) 123456</a><br>
+            <i class="fa fa-envelope mt-3"></i> <a href="">info@mychino.jp</a><br>
+            <i class="fas fa-globe mt-3"></i> 〒 359-0044<br>
+            <i class="fas fa-globe mt-3"></i> 埼玉県所沢市松葉町13番17ー203号グランドコード松葉<br>
+            <div class="my-4">
+            <a href=""><i class="fab fa-facebook fa-3x pr-4"></i></a>
+            <a href=""><i class="fab fa-linkedin fa-3x"></i></a>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-6 maps" >
+            <a href="https://www.google.com/maps/place/%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%89%E3%82%B3%E3%83%BC%E3%83%88%E6%9D%BE%E8%91%89/@35.807894,139.4544712,17z/data=!3m1!4b1!4m5!3m4!1s0x6018dd12362cef1b:0x1ed8dfb1c0bd25b5!8m2!3d35.8078977!4d139.4566523?hl=en-US">地図にアクセス</a>
+            <iframe src="https://www.google.com/maps/place/%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%89%E3%82%B3%E3%83%BC%E3%83%88%E6%9D%BE%E8%91%89/@35.807894,139.4544712,17z/data=!3m1!4b1!4m5!3m4!1s0x6018dd12362cef1b:0x1ed8dfb1c0bd25b5!8m2!3d35.8078977!4d139.4566523?hl=en-US" frameborder="0" style="border:0" allowfullscreen></iframe>
+         </div>
+        </div>
+    </div>
+    </div>
+    
+
+{% endblock %}
