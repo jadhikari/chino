@@ -1,4 +1,5 @@
 {%extends 'main.html'%}
+{% load static%}
 {% block title %}
             Chino:about
 {% endblock %}
@@ -8,8 +9,35 @@
     .pageBody{
         margin-top: 100px;
     }
+    @media(max-width: 992px) {
+        .about{
+            margin-top: 0px !important;
+        }
+    }
 </style>
 <div class="pageBody">
-    <H2> this is about page </H2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{% static 'images/about.jpg'%}" alt="" class="img-fluid about" style="margin-top: 50px;">
+            </div>
+            <div class="col-md-6">
+                <p>
+                    <h3 style="text-align: center;">ご挨拶</h3>
+                    <h5 style="text-align: justify;">
+                        Chino株式会社は、企業理念として徹底した顧客目線をかかげております。<br> 
+                        これは過去に利益優先の考えをしていた結果、倒産寸前まで落ち込んだ苦い経験を糧に、企業はお客様のためにあるものというしごく当たり前の事に立ち返って、改めて理念として掲げました。<br>
+                        その結果、紆余曲折はありましたがお客様からの共感も数多くいただきまして今に至っております。<br>
+                        これに甘えること無く、今後も変わらず徹底した顧客目線でお客様の求めるもの・お困りごとに徹底してお応えしていける企業であるよう社員一丸となって取り組んで参ります。<br>
+                    </h5>
+                    <h5 style="text-align: right;">
+                        Chino株式会社<br>
+                        代表取締役社長 GURUNG BIKASH
+                    </h5>
+                    
+                   </p>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
