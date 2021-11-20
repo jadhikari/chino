@@ -31,8 +31,14 @@
         <div class="row" >
           
           <div class="col-md-6">
+            <!-- <center>
+              <h3>Thank you {{name}}</h3>
+              <p>We received your email and will respond shortly ...</p>
+            </center> -->
+            <br>
             <h2 class="text-uppercase mt-3 font-weight-bold text-primary">お問い合わせ</h2>
-            <form action="">
+            <form action="" method="POST">
+              {% csrf_token %}
               <div class="row">
                 <div class="col-12">
                     <div class="form-group">
@@ -45,27 +51,27 @@
                   </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input type="text" class="form-control mt-2" placeholder="お名前（必須）" required>
+                    <input type="text" class="form-control mt-2" placeholder="お名前（必須）" name="name" required>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input type="text" class="form-control mt-2" placeholder="題名（必須）" required>
+                    <input type="text" class="form-control mt-2" placeholder="題名（必須）" name="title" required>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input type="email" class="form-control mt-2" placeholder="メールアドレス（必須）" required>
+                    <input type="email" class="form-control mt-2" placeholder="メールアドレス（必須）" name="email" required>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input type="text" class="form-control mt-2" placeholder="電話番号（必須）" required>
+                    <input type="text" class="form-control mt-2" placeholder="電話番号（必須）" name="phone" required>
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="form-group">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="お問い合わせ内容（必須）" rows="3" required></textarea>
+                    <textarea class="form-control" placeholder="お問い合わせ内容（必須）" rows="3" name ="phone" corequired></textarea>
                   </div>
                 </div>
                 <div class="col-12">

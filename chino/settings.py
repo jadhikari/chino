@@ -26,6 +26,13 @@ SECRET_KEY = 'django-insecure-d!r8)j6i4)k#$02j%4%(l6zr$cd=#l)bo0l_yefqxgcoudjnbl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_USE_TLS = True
+# EMAIL_HOST = 'smtp.office365.com'
+# EMAIL_HOST_USER = "info@mychino.jp"
+# EMAIL_HOST_PASSWORD = 'Nepal@131'
+# EMAIL_PORT = '587'
+
 ALLOWED_HOSTS = []
 
 
@@ -123,6 +130,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
 ]
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

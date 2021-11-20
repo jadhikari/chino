@@ -25,11 +25,16 @@
             height: 150px;
             width: 150px;
             border-radius: 50%;
-            border: 2px solid #5161ce;
+            border: 2px solid #b8b8bb;
         }
         .notice{
             
             box-shadow: 1px 1px 1px 1px #cecefa;
+        }
+        .about{
+            text-align: center; 
+            margin-top: 8px; 
+            color: #5161ce;
         }
     </style>
     <div>
@@ -45,22 +50,22 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" >
                     <ul class="navbar-nav " id="mynav">
                         <li class="nav-item ">
-                            <a class="nav-link active " aria-current="page" href="/" ><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                            <a class="nav-link active " aria-current="page" href="/" ><i class="fas fa-tachometer-alt"></i>ダッシュボード</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="about"><i class="fas fa-building"></i></i></i>About</a>
+                            <a class="nav-link " href="about"><i class="fas fa-building"></i></i></i>トについて</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="components"><i class="far fa-clone"></i>Components</a>
+                            <a class="nav-link " href="components"><i class="far fa-clone"></i>構成</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link " href="calendar"><i class="far fa-calendar-alt"></i>Calendar</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link  " href="company" ><i class=" far fa-info"></i></i>会社案内</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  " href="company" ><i class=" far fa-info"></i></i>Company Info</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="contact"><i class="far fa-address-book"></i></i>Contact us</a>
+                            <a class="nav-link " href="contact"><i class="far fa-address-book"></i></i>お問い合わせ</a>
                         </li>
                     </ul>
                 </div>
@@ -104,83 +109,75 @@
                                 <h2 style="text-align: center; color: #5161ce;"><b>SERVICES</b></h2><br><br>
                                 <div class="col-md-4 col-sm-6 col-6" id="image">
                                     <img class="info-img img-fluid  mx-auto d-block" src="{% static 'images/e2.png' %}" >
-                                    <h5 style="text-align: center;">IT Consulting Business</h5>
-                                    <p style="text-align: justify;">
+                                    <h5 class="about">
+                                        IT コンサルティング事業
+                                    </h5>
+                                    <p style="text-align: justify; font-size: 14px;padding: 6px;">
                                         IT consultants help individuals or businesses make 
                                         technology purchases or strategy decisions 
                                         An IT consultant may serve as a short-term virtual CIO, 
-                                        providing expert advice on IT strategy to a 
-                                        company that lacks high-level IT expertise in house.
+                                        providing <a href="about">...more</a>
                                     </p>
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-6">
                                     <img class="info-img img-fluid mx-auto d-block" src="{% static 'images/e3.png' %}" >
-                                    <h5 style="text-align: center;">Translation </h5>
-                                    <p style="text-align: justify;">
+                                    <h5 class="about">
+                                        翻訳
+                                    </h5>
+                                    <p style="text-align: justify; font-size: 14px;padding: 6px;">
                                         All translators working on the Gengo platform are carefully 
                                         chosen and rigorously tested to ensure our customers get the 
-                                        best translation quality. All translator candidates are required
-                                         to go through a multi-phased testing process which includes a 
-                                         multiple choice test and a written translation test that is created 
-                                         and individually reviewed by our expert team of professional Language Specialists.
+                                        best translation quality. All translator candidates  <a href="about">...more</a>
                                     </p>
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-6">
                                     <img class="info-img img-fluid mx-auto d-block" src="{% static 'images/e4.png' %}" >
-                                    <h5 style="text-align: center;">Support</h5>
-                                    <p style="text-align: justify;">
+                                    <h5 class="about">
+                                        支持
+                                    </h5>
+                                    <p style="text-align: justify; font-size: 14px;padding: 6px;">
                                         After-sales support, sometimes called after-sales service, is any service
                                          provided after a customer has purchased a product. After-sales support may 
-                                         be provided by a retailer, manufacturer, or a third-party customer service or 
-                                         training provider. Typically, examples of after-sales service include support 
-                                         regarding warranty service, training, or repair and upgrades. After-sales support 
-                                         may also be considered to be part of a company's overall marketing strategy. 
-                                         Some customers might seek out a company’s products based on its after-sales service, 
-                                         for example, Best Buy Co.’s Geek Squad or Apple Inc.'s Apple Care.
+                                         be provided by a retailer, manufacturer, or   <a href="about">...more</a>
                                     </p>
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-6">
                                     <img class="info-img img-fluid mx-auto d-block" src="{% static 'images/e1.png' %}" >
-                                    <h5 style="text-align: center;">Store management</h5>
-                                    <p style="text-align: justify;">
+                                    <h5 class="about">
+                                        店舗管理
+                                    </h5>
+                                    <p style="text-align: justify; font-size: 14px;padding: 6px;">
                                         Retail management is the practice of operating and supervising all activities within 
                                         a store. This includes working closely with staff, creating shift schedules, communicating 
-                                        with suppliers, and dealing with customer complaints.Store managers have the responsibility 
-                                        of tracking and monitoring inventory levels to prevent stocking too much or too little products
-                                        . By maintaining the optimal amount of inventory, retailers will be able to meet customers' 
-                                        demands while minimizing unnecessary expenses.
+                                        with suppliers <a href="about">...more</a>
                                     </p>
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-6 ">
                                     <img class="info-img img-fluid mx-auto d-block" src="{% static 'images/e5.png' %}" >
-                                    <h5 style="text-align: center;">Restaurant business </h5>
-                                    <p style="text-align: justify;">
+                                    <h5 class="about">
+                                        外食事業
+                                    </h5>
+                                    <p style="text-align: justify; font-size: 14px;padding: 6px;">
                                         Restaurant Business is the leading media brand in the commercial foodservice industry, 
-                                        with a focus on entrepreneurship, innovation and growth.Restaurant Business understands 
-                                        the new state of media like no other, recognizing the importance and nuances of each, and 
-                                        helping you retrieve the information you need, wherever, whenever. Each product of Restaurant 
-                                        Business concisely shows growth-minded restaurateurs how to capitalize on trends, new concepts, 
-                                        changes in consumer tastes, new purchasing strategies and peers’ best practices.Our editors track 
-                                        ideas and trends as they develop within key channel segments including high-volume independents, multiunit 
-                                        operators, emerging chains and the top 100 chains, plus their top franchisees.
+                                        with a focus on entrepreneurship, innovation and growth.Restaurant Business understands
+                                        the new state of media <a href="about">...more</a>
                                     </p>
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-6">
                                     <img class="info-img img-fluid mx-auto d-block" src="{% static 'images/e6.png' %}" >
-                                    <h5 style="text-align: center;">Human resource </h5>
-                                    <p style="text-align: justify;">
+                                    <h5 class="about">
+                                        人事
+                                    </h5>
+                                    <p style="text-align: justify; font-size: 14px;padding: 6px;">
                                         The presence of an HR department is an essential component of any business, regardless of the
-                                         organization's size. An HR department is tasked with maximizing employee productivity and 
-                                         protecting the company from any issues that may arise within the workforce. HR responsibilities 
-                                         include compensation and benefits, recruitment, firing, and keeping up to date with any laws that
-                                          may affect the company and its employees.
+                                         organization's size. An HR department is tasked with maximizing employee <a href="about">...more</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-12 col-12">
                             <div class="notice">
-                                <h3 style="text-align: center; margin-top: 25px;">Notice</h3>
+                                <h3 style="text-align: center; margin-top: 25px;">通知</h3>
                                 <img class="line-img img-fluid" src="{% static 'images/hr.png' %}" style="width: 100%; margin-top: -25px;">
                                 <ul style="list-style: none;">
                                     <li>Notice of November

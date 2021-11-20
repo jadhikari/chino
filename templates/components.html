@@ -8,9 +8,89 @@
     .pageBody{
         margin-top: 100px;
     }
+    .search{
+        height: 350px;
+        /* background-color: rgba(182, 209, 243, 0.63);
+        opacity: 0.6; */
+        box-shadow: 1px 1px 1px 1px #e9e9f7;
+    }
+    .item{
+        margin-top: 10%;
+    }
+    .search-container {
+        /* background-color: rgb(90, 88, 88); */
+        border: 1px solid #9999e0;
+        position: relative;
+        border-radius: 30px;
+        padding: 3px 50px 3px 10px;
+        }
+        .search-box {
+        background-color: transparent;
+        outline: none;
+        height: 43px;
+        font-size: 15px;
+        border: 0;
+        width: 100%;
+        }
+        .search-button {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        background-color: #5161ce;
+        border-radius: 30px;
+        border: 0;
+        color: #FFF;
+        width: 100px;
+        height: 50px;
+        outline: 0;
+        }
+    h1{
+        text-align: center;
+        color: #5161ce;
+    }
+    h3 i{
+        color: red;
+    }
+    p{
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .faq{
+        margin-top: 70px;
+    }
 </style>
 <div class="pageBody">
-    <H2> this is Components page </H2>
+    <div class="container">
+        <div class="row search">
+            <div class="col-12 item">
+                <h1>お手伝いしましょうか？</h1><br>
+                <div class="inner-addon right-addon">
+                    <div class="search-container">
+                        <input type="text" class="search-box" placeholder="Search...">
+                        <button class="search-button">&nbsp;<i class="glyphicon fas fa-search"> </i></button>
+                    </div>
+                    <p>注：詳細については。 ここを <a href="contact">クリック</a> してください。 </p>
+                </div>
+            </div>
+        </div> 
+        <div class="row faq">
+            <div class="col-12">
+                <h1>よくあるご質問</h1>
+               <h3><i class="far fa-question"></i> 具体的に何をしているのかがわからないのですが？</h3> 
+                <p><i class="far fa-angle-double-right"></i> 
+                    はい、弊社はお客様の欲しいものを提供する・お客様の困っていることを解決するなどお客様のニーズに応える事が企業ミッションになっております。お客様のニーズがあれば何でもやる会社という位置づけになります。
+                </p> 
+                <h3><i class="far fa-question"></i> 日本語が話せないのですが、相談して大丈夫でしょうか？</h3>
+                <p><i class="far fa-angle-double-right"></i> 
+                    はい、弊社は他社には無い、多国言語話せるスタッフがいるので安心してください。
+                    日本語が書けなく、読めなくてもサポートいたします。
+                    全社員で徹底した顧客目線の意識を持っておりますので、同じ方向に向かって一丸と進みますのでブレがなくお客様の求めるものを確実にご提案させていただきます。
+                </p>
+
+
+            </div>
+        </div>
+    </div>
 </div>
                 
 {% endblock %}
